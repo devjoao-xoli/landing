@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Programador Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/423049.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="imagens/283222065_3402866296600984_3651100930848426237_n.jpg" alt="Minha foto">
+      <div class="profile-links">
+        <a href="https://wa.me/5573999689148?text=Olá%20João%20Pedro!%20Gostaria%20de%20falar%20sobre%20seus%20serviços%20de%20desenvolvimento%20web." target="_blank">
+          <img src="imagens/whatsapp.png" alt="WhatsApp" class="logo-icon">
+        </a>
+        <a href="https://github.com/devjoao-xoli" target="_blank">
+          <img src="imagens/github.png" alt="GitHub" class="logo-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-a28061261/" target="_blank">
+          <img src="imagens/linkedin.png" alt="LinkedIn" class="logo-icon">
+        </a>
+      </div>
+    </div>
+    <h1>Olá, eu sou João Pedro</h1>
+    <p>Desenvolvedor Web Full-Stack apaixonado por criar soluções inovadoras.</p>
+    <a href="https://wa.me/5573999689148?text=Olá%20João%20Pedro!%20Gostaria%20de%20falar%20sobre%20seus%20serviços%20de%20desenvolvimento%20web." target="_blank">Entre em contato</a>
+  </header>
+
+  <section class="about">
+    <h2>Sobre Mim</h2>
+    <p>Tenho experiência em desenvolvimento web utilizando tecnologias como HTML, CSS, JavaScript, React, e muito mais. Estou sempre em busca de aprender e implementar novas tecnologias para oferecer as melhores soluções aos meus clientes.</p>
+    <div class="logos-carousel">
+      <div class="carousel-container">
+        <img src="imagens/html.png" alt="HTML" class="carousel-item">
+        <img src="imagens/css-3.png" alt="CSS" class="carousel-item">
+        <img src="imagens/script-java.png" alt="JavaScript" class="carousel-item">
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Projetos</h2>
+    <div class="portfolio-card">
+      <h3>Projeto Android</h3>
+      <video controls>
+        <source src="imagens/android.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+      <p>Projeto sobre a História do Android.</p>
+      <a href="https://devjoao-xoli.github.io/projeto-android/" target="_blank">Veja no GitHub</a>
+    </div>
+    <div class="portfolio-card">
+      <h3>Projeto Cordel</h3>
+      <video controls>
+        <source src="imagens/cordel.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+      <p>Projeto de um Cordel estilizado e chamativo.</p>
+      <a href="https://devjoao-xoli.github.io/Projeto-Cordel/" target="_blank">Veja no GitHub</a>
+    </div>
+    
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://wa.me/5573999689148?text=Olá%20João%20Pedro!%20Gostaria%20de%20falar%20sobre%20seus%20serviços%20de%20desenvolvimento%20web." target="_blank">Entre em contato</a>
+    </div>
+    <p>Feito com 💜 por João Pedro</p>
+  </footer>
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+
+function showNextLogo() {
+    // Remove a classe 'active' da logo atual e adiciona 'inactive'
+    items[currentIndex].classList.remove('active');
+    items[currentIndex].classList.add('inactive');
+
+    // Avança para o próximo índice
+    currentIndex = (currentIndex + 1) % items.length;
+
+    // Adiciona a classe 'active' na próxima logo e remove 'inactive'
+    items[currentIndex].classList.remove('inactive');
+    items[currentIndex].classList.add('active');
+}
+
+// Inicializa a primeira logo como ativa
+items[currentIndex].classList.add('active');
+
+// Executa a função a cada 3 segundos
+setInterval(showNextLogo, 3000);
+
+
+  </script>
+</body>
+</html>
