@@ -51,7 +51,7 @@ header a {
 }
 
 header a:hover, footer a:hover {
-    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    background: linear-gradient(135deg, #a065d1, #b084d9);
     transform: scale(1.1);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
@@ -106,6 +106,58 @@ section h2 {
     margin-bottom: 2rem;
     color: #d8b4ff;
 }
+
+.examples {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #2c2c54, #1a1a40);
+    color: #fff;
+}
+
+.examples h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d8b4ff;
+}
+
+.examples p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.examples video {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.examples a {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.examples a:hover {
+    background: linear-gradient(135deg, #a065d1, #b084d9);
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 .about {
     max-width: 800px;
@@ -170,15 +222,11 @@ footer {
 }
 
 footer a {
-    color: #d8b4ff;
+    color: #fff;
     text-decoration: none;
     margin: 0 0.5rem;
     font-size: 1.5rem;
     transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #fff;
 }
 
 footer p {
