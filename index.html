@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="profile">
-      <img src="imagens/283222065_3402866296600984_3651100930848426237_n.jpg" alt="Minha foto">
+      <img src="imagens/283222065_3402866296600984_3651100930848426237_n.jpg" alt="Minha foto" loading="lazy">
       <div class="profile-links">
         <a href="https://wa.me/5573999689148?text=Olá%20João%20Pedro!%20Gostaria%20de%20falar%20sobre%20seus%20serviços%20de%20desenvolvimento%20web." target="_blank">
           <img src="imagens/whatsapp.png" alt="WhatsApp" class="logo-icon">
@@ -33,8 +33,8 @@
   <section class="examples">
     <h2>Exemplos de Landings</h2>
     <p>Veja como criamos páginas incríveis que destacam sua marca e encantam seus clientes. Confira o vídeo abaixo com alguns exemplos de landings modernas e eficazes.</p>
-    <video controls>
-      <source src="imagens/0120(1).mp4" type="video/mp4">
+    <video controls >
+      <source src="imagens/exemplos.mp4" type="video/mp4">
       Seu navegador não suporta vídeos HTML5.
     </video>
     <p>Quer algo parecido? Entre em contato e traga sua ideia para a realidade!</p>
@@ -58,7 +58,7 @@
     <h2>Projetos</h2>
     <div class="portfolio-card">
       <h3>Projeto Android</h3>
-      <video controls>
+      <video controls preload="none">
         <source src="imagens/android.mp4" type="video/mp4">
         Seu navegador não suporta vídeos HTML5.
       </video>
@@ -67,7 +67,7 @@
     </div>
     <div class="portfolio-card">
       <h3>Projeto Cordel</h3>
-      <video controls>
+      <video controls preload="none">
         <source src="imagens/cordel.mp4" type="video/mp4">
         Seu navegador não suporta vídeos HTML5.
       </video>
@@ -105,8 +105,6 @@ items[currentIndex].classList.add('active');
 
 // Executa a função a cada 3 segundos
 setInterval(showNextLogo, 3000);
-
-
-  </script>
+</script>
 </body>
 </html>
